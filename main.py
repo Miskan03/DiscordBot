@@ -9,12 +9,12 @@ async def on_ready():
     
 ##EMBED COMMAND
 @client.command()
-async def hello(ctx):
+async def command(ctx):
     embed = discord.Embed(
         colour = discord.Colour.blue()#instead of blue you can use whatever color you want
     )
 
-    embed.add_field(name = "***MISKAN***" , value = "***Hello welcome to server-name***")
+    embed.add_field(name = "***MISKAN***" , value = "***github/Miskan03***")
     await ctx.send(embed = embed)
 
 ##JUST COMMAND
