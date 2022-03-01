@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-client = commands.Bot(command_prefix="?")# discord bot perfix ('your perfix')
+client = commands.Bot(command_prefix="your perfix")#can be +,=,.,-...
 
 @client.event
 async def on_ready():
@@ -11,7 +11,7 @@ async def on_ready():
 @client.command()
 async def hello(ctx):
     embed = discord.Embed(
-        colour = discord.Colour.blue()##instead of blue you can use whatever color you want
+        colour = discord.Colour.blue()#instead of blue you can use whatever color you want
     )
 
     embed.add_field(name = "***MISKAN***" , value = "***Hello welcome to server-name***")
@@ -23,4 +23,4 @@ async def miskan(ctx):
     await ctx.send('Miskan')
 
 ##BOT TOKEN ALWAYS NEEDS TO BE ON END
-client.run("")
+client.run("YOUR TOKEN")
