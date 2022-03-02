@@ -6,6 +6,7 @@ client = commands.Bot(command_prefix="your perfix")#can be +,=,.,-...
 @client.event
 async def on_ready():
     print("+ Bot has started.")
+        await client.change_presence(activity=discord.Game(name='DISCORD BOT RPC'))
     
 ##EMBED COMMAND
 @client.command()
